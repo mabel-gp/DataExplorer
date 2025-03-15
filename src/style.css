@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Style+Script&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E5E5;
+}
+
+
+/* Home View */
+
+#principal-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #333333;
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+.grettings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #4A4A44;
+}
+
+#subtitle-one{
+    padding: 2rem;
+}
+
+#subtitle-two{
+    padding: 1rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+.button-start{
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    color: #f0f0f0;
+    border: 3px solid #f0f0f0;
+    border-radius: 15px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button-start:hover {
+    transform: scale(1.05);
+}
+  
+.button-start:active{
+    box-shadow: 0 2px 0px;
+    transform: translateY(3px);
+}
+
+#button-animated{
+    background-color: #4C9A2A ;
+}
+
+#button-romantic{
+    background-color: #F06292;
+}
+
+
+/* Animated-Romantic View */
+
+.list-container{
+    margin: 0 1rem 0 1rem ;
+    padding: 2rem;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+li{
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    font-size: 90%;
+    min-height: 350px;
+}
+
+li:hover{
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.title-view{
+    padding: 2rem 0 0 0;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 0.15rem;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    text-transform: uppercase;
+}
+
+#title-animated{
+    color: #4C9A2A ;
+}
+
+#title-romantic{
+    color:#F06292;
+}
+
+#subtitle-movie{
+    min-height: 50px;
+    padding: 0 0 1rem 0;
+    text-align: center;
+    font-size: 1.25em;
+    color: #333333;
+}
+
+#paragraph-movie{
+    min-height: 8rem;
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+    color: #555555;
+}
+
+.image{
+    box-shadow: 3px 3px 9px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    transition: trasform 0.3s ease-in-out;
+}
+
+#img-animated{
+    height: 12.5rem;
+}
+
+#img-romantic{
+    height: 14.5rem;
+    width: 10rem;
+}
+
+.container-button-inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 2rem 0;
+}
+
+#button-inicio{
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    color: white;
+    border: 3px solid #f0f0f0;
+    border-radius: 15px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: #2563EB;
+}
+
+#button-inicio:hover {
+    transform: scale(1.05);
+}
+  
+#button-inicio:active{
+    box-shadow: 0 2px 0px;
+    transform: translateY(3px);
+}
+
+
+/* Media Queries */
+
+@media (max-width: 480px){
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    .grettings, .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .grettings, .buttons {
+        flex-direction: column;
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1024px){
+    .grettings, .buttons {
+        flex-direction: column;
+        text-align: center;
+        font-size: 10px;
+    }
+}
